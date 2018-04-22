@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-import FormBody from "./components/FormBody";
-import InvoicePreview from "./components/InvoicePreview";
+import FormBody from "./src/components/FormBody";
+import InvoicePreview from "./src/components/InvoicePreview";
 
 class App extends React.Component {
   render() {
