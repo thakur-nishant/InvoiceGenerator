@@ -9,4 +9,4 @@ var Schema = mongoose.Schema;
 
 var InvoiceSchema = new Schema({
 
-}); 
+});
