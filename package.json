@@ -34,5 +34,6 @@
   },
   "devDependencies": {
     "webpack-cli": "^2.0.14"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

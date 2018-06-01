@@ -3,12 +3,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const invoiceData = require('./model/InvoiceData');
-const productData = require('./model/ProductData');
+const invoiceData = require('../model/InvoiceData');
+const productData = require('../model/ProductData');
 
 // create an instance
 const app = express();
-const router = express.Router;
+const router = express.Router();
 
 //set our port to either a predetermined port number if you have set
 //it up, or 3001
@@ -44,7 +44,10 @@ router.get('/', function(req, res) {
 
 router.post('/saveInvoice', (req, res) => {
     const invoice = new invoiceData();
-    console.log(req.body)
+    const data = req.body;
+    console.log(data);
+    res.json({ message: 'Ready to post data!'});
+
 });
 
 //Use our router configuration when we call /api

@@ -24,4 +24,4 @@ const InvoiceSchema = new Schema({
 });
 
 //export our module to use in server.js
-exports = mongoose.model('InvoiceData', InvoiceSchema);
+module.exports = mongoose.model('InvoiceData', InvoiceSchema);
