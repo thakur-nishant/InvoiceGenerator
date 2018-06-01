@@ -152,29 +152,26 @@ export default class FormBody extends React.Component {
             onChange={this.props.updateStateProp}
           />
         </FormGroup>
-
-        <FormGroup controlId="formControlsText">
-          <ControlLabel>Date</ControlLabel>
-          <FormControl
-            type="date"
-            name="invoiceDate"
-            value={this.props.formStateProp.invoiceDate}
-            placeholder="Enter Date"
-            onChange={this.props.updateStateProp}
-          />
+        <FormGroup controlId="formControlsText" className="col-sm-6" style={{ paddingLeft: "0px" }}>
+            <ControlLabel>Date</ControlLabel>
+            <FormControl
+                type="date"
+                name="invoiceDate"
+                value={this.props.formStateProp.invoiceDate}
+                placeholder="Enter Date"
+                onChange={this.props.updateStateProp}
+            />
         </FormGroup>
-
-        <FormGroup controlId="formControlsText">
-          <ControlLabel>Due Date</ControlLabel>
-          <FormControl
-            type="date"
-            name="dueDate"
-            value={this.props.formStateProp.dueDate}
-            placeholder="Enter Due Date"
-            onChange={this.props.updateStateProp}
-          />
+        <FormGroup controlId="formControlsText" className="col-sm-6" style={{ paddingRight: "0px" }}>
+            <ControlLabel>Due Date</ControlLabel>
+            <FormControl
+                type="date"
+                name="dueDate"
+                value={this.props.formStateProp.dueDate}
+                placeholder="Enter Due Date"
+                onChange={this.props.updateStateProp}
+            />
         </FormGroup>
-
         <FormGroup controlId="formControlsText">
           <ControlLabel>
             Products{" "}
